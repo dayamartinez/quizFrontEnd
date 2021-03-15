@@ -1,0 +1,346 @@
+/* -> MOBILE FIRST <- */
+body {
+    text-align: center;
+    background-color: white;    
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* home */
+.home {
+    width: 100%; 
+    height: 60vh;
+    margin: 70px 0;
+    display: flex;
+    background-image: url('../images/man-blazer.png'); 
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;     
+}
+
+.go-services {
+    width: 93%;
+    height: 85%;
+    color: white;
+    text-align: left;
+    margin: 20px auto;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgba(29, 56, 129, 0.986);
+}
+
+.go-services span {
+    margin-top: 0;
+    margin-left: 5px;
+    font-size: small;   
+}
+
+.go-services h2 {
+    margin-left: 5px;
+    font-size: x-large; 
+    font-weight: lighter;
+ }
+
+.btnStyle {
+    border: none;
+    color: white;
+    margin:10px 8px;
+    padding: 4px 16px;
+    border-radius: 35px;
+    background-color: rgb(202, 170, 142);
+ }
+
+ /*  title navbar deleted  */
+.transparent {
+    display: none;
+}
+
+/* services */
+#services { 
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+/* company */
+#company {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: left;
+    background-image: url('../images/building3.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;  
+    background-size: cover;       
+}
+
+.company {
+    text-align: left;
+    padding:  90px 20px;
+    background-color: rgba(255, 255, 255, 0.404);     
+}
+
+/* galery */
+.galery {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/* projects */
+.projects {
+    display: flex;
+    text-align: left;
+    flex-direction: column;    
+    padding:  80px 15px; 
+    color: rgba(19, 18, 18, 0.781); 
+    background-color: rgba(202, 170, 142, 0.075);     
+}
+
+.projects h1 {    
+    font-size: 80px;
+    font-weight: 400;
+    color: rgb(202, 170, 142);
+}
+
+/* sendRequest */
+#sendRequest {
+    height: 45vh;
+    margin: 20px 0; 
+    background-image: url('../images/request.jpg');
+    background-repeat: no-repeat;
+    background-position: right;  
+    background-size: cover;      
+}
+
+#sendRequest img {
+    display: none;
+}
+
+.sendRequest {   
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    color: white;
+    padding: 30px 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    box-sizing: border-box;  
+    background-color:rgba(29, 56, 129, 0.952);
+}
+
+.sendRequest p {
+    font-size: 15px;
+}
+.sendRequest span {
+    font-size: 12px;
+}
+
+/* contact  */
+#contact img {
+    display: none;
+}
+
+.contact {
+    width: 100%;
+    height: 75vh;
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;      
+    box-sizing: border-box;       
+    background-color:rgba(29, 55, 129, 0.980);
+}
+
+.contact p {
+    font-size: 11PX;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+}
+
+.contact input {
+    color: white;
+    font-size: 12px;  
+    margin: 10px 5px; 
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid rgba(228, 228, 228, 0.527);
+}
+
+.contact button {
+    width: 150px;
+    font-size: 8.5px;
+}
+
+/* our clients */
+#ourClients {
+    margin-top: 50px;
+}
+
+#ourClients h1 {
+    font-weight: 200;
+}
+
+.viewDesktop {
+    display: none;
+}
+
+.viewMobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+
+/* text color rgb(179, 153, 131) */
+.color {
+    color: rgb(179, 153, 131);
+}
+
+/*--View from Desktop---*/
+@media only screen and (min-width: 800px){  
+    /* home */
+    .home {
+        width: 100%;
+    }
+    .go-services {
+        width: 600px;
+        margin: 40px 50px;
+        padding: 0 80px;
+    }  
+    .go-services h2 {
+        font-size:xx-large; 
+    }
+
+     /* title navbar */
+    .transparent {
+        display: block;
+    } 
+    #transparent {
+        display: none;
+    } 
+    #textColor {
+        color: rgb(202, 170, 142);
+    }
+
+    /* services */
+    #services {
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;   
+        align-items: center;     
+    }
+    .conteiner-services  {
+        width: 16.66%;
+    }
+
+    /* company */
+    #company {
+        height: 60vh;
+        align-items: center;
+        padding: 0 300px;
+    }
+    .company {
+        width: 400px;
+        background-color: transparent;          
+    }
+
+    /* galery */
+    .galery {
+        width: 100%;
+        margin: 80px 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* projects */
+    .projects {
+        height: 50vh;
+        padding: 0;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-evenly; 
+    }
+    .projects div {
+        width: 30%;
+    }
+
+    /* sendRequest */
+    #sendRequest {
+        padding: 0;
+        height: 45vh;
+        margin: 50px 0;
+        display: flex;
+        justify-content: row; 
+    }
+    #sendRequest img {
+        width: 50vw;
+        height: 45vh;
+        display: flex;        
+    }
+    .sendRequest { 
+        margin: 0;  
+        width: 50vw;       
+        padding: 0 80px;  
+        text-align: left;
+    }
+    .sendRequest p {
+        font-size: 15px;
+    }
+
+    /* contact */
+    .btncontact {
+        color: white;
+        border-radius: 40px;
+        background-color: rgba(29, 55, 129, 0.980);          
+    }   
+    #contact {
+        display: flex;
+        flex-direction: row;    
+    }
+    #contact img {
+        width: 50vw;
+        height: 70vh;
+        display: flex;
+    }
+    .contact {
+        width: 50vw;
+        height: 70vh;
+        display: flex;
+        padding: 0 10px;
+        align-items: center;    
+    }
+    .contact p{
+        font-size: 14px;
+    }
+    .contact input {
+        width: 380px;
+        margin: 15px 0;
+        padding: 3px 0;        
+        font-size: 13px;   
+    }
+    .contact button {
+        width: 250px;
+        font-size: 13px;
+     }
+
+    /* our clients */
+    .viewDesktop {
+        width: 100%;
+        display: flex;
+        justify-content: center;        
+    }
+    .viewMobile {
+        display: none
+    }
+}
